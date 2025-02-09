@@ -2,9 +2,10 @@
 @import 'theme.css';
 
 body {
-    background-color: transparent; /* Eliminamos el color de fondo gris */
+    background-color: transparent; /* Cambiado a transparente */
     font-family: "Poppins";
     letter-spacing: 0px;
+    margin: 0; /* Asegurar que no haya margen alrededor del body */
 }
 
 img {
@@ -126,4 +127,9 @@ img {
 .progress::-webkit-progress-value {
     background-color: var(--element-color);
     border-radius: 10px;
+}
+
+/* Ocultando completamente cualquier fondo no deseado */
+.background-update, .launcher-background, .overlay {
+    display: none !important;
 }
