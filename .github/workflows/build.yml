@@ -5,7 +5,7 @@ on:
     branches: [ master ]
 
 permissions:
-  contents: write  # Permite modificar el contenido del repo, necesario para releases
+  contents: write 
 
 jobs:
   create-release:
