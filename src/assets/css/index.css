@@ -2,7 +2,7 @@
 @import 'theme.css';
 
 body {
-    background-color: var(--background);
+    background-color: transparent; /* Eliminamos el color de fondo gris */
     font-family: "Poppins";
     letter-spacing: 0px;
 }
@@ -126,13 +126,4 @@ img {
 .progress::-webkit-progress-value {
     background-color: var(--element-color);
     border-radius: 10px;
-}
-
-/* Código para ocultar el fondo gris */
-.background-update {
-    display: none; /* Oculta completamente el elemento */
-    /* Si quieres mantener el espacio pero hacerlo invisible:
-    visibility: hidden;
-    pointer-events: none;
-    */
 }
