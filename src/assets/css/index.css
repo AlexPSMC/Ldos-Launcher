@@ -127,7 +127,3 @@ img {
     background-color: var(--element-color);
     border-radius: 10px;
 }
-
-.background-update {
-    display: none;
-}
