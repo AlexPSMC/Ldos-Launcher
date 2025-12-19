@@ -1,13 +1,13 @@
 {
     "name": "Hexa-Client",
     "preductname": "Hexa Client",
-    "version": "1.8.0",
+    "version": "3.0.11",
     "description": "Launcher oficial de Light Studio",
     "main": "src/app.js",
     "author": {
         "name": "AlexPSMC",
         "email": "soypancraft@gmail.com",
-        "url": "https://github.com/AlexPSMC"
+        "url": "https://github.com/"
     },
     "url": "http://172.96.172.240:25590/Launchers/HexaMain",
     "scripts": {
@@ -40,6 +40,6 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/AlexPSMC/Ldos-Launcher.git"
+        "url": "git+https://github.com//"
     }
 }
