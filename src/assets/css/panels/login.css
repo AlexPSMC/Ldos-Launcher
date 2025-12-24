@@ -23,7 +23,11 @@
 .login-text2 {
     font-size: 2.9rem;
     position: relative;
-    top: -16px; /* mueve 20px hacia arriba */
+    top: -6px;
+
+    /* 👇 letra normal */
+    font-family: Arial, sans-serif;
+    font-weight: normal;
 }
 
 .login-text {
@@ -36,7 +40,7 @@
     font-size: 3rem;
     position: relative;
     top: -2px; /* mueve 20px hacia arriba */
-    background: linear-gradient(90deg, #e000ff, #00ffe0, #ffea00);
+    background: linear-gradient(90deg, #ff0000, #c70000);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text; 
@@ -57,10 +61,10 @@
 /* Todos los botones (Conectar, Cancelar, Microsoft, Offline...) */
 .connect,
 .cancel {
-    background: #ff48d6;        /* Rosa */
-    color: white;               /* Texto blanco */
-    border: solid 4px #ff48d6;  /* Borde rosa */
-    border-radius: 10px;
+    background: #ff0000;        /* Rosa */
+    color: rgb(0, 0, 0);               /* Texto blanco */
+    border: solid 4px #ff0000;  /* Borde rosa */
+    border-radius: 1px;
     padding: 0.3rem 4rem;
     font-size: inherit;
     font-weight: bold;
@@ -71,8 +75,8 @@
 .connect:hover,
 .cancel:hover {
     transform: scale(1.1);
-    background: #da26aa;        /* Rosa fuerte */
-    border-color: #da26aa;
+    background: #d10000;        /* Rosa fuerte */
+    border-color: #d10000;
 }
 
 
@@ -95,19 +99,15 @@
 /* SOLO los botones de Microsoft y Offline (pantalla principal) */
 .select-microsoft,
 .select-offline {
-    background: #ff48d6;             /* Rosa */
-    color: white;                    /* Texto blanco */
-    border-color: #ff48d6;           /* Borde rosa fuerte */
+    background: #ff0000;             /* Rosa */
+    color: rgb(0, 0, 0);                    /* Texto blanco */
+    border-color: #ff0000;           /* Borde rosa fuerte */
 }
 
 .select-microsoft:hover,
 .select-offline:hover {
     transform: scale(1.1);
-    background: #da26aa;             /* Rosa más fuerte al pasar el mouse */
-}
-
-#login-page {
-    background: none !important;
+    background: #d10000;             /* Rosa más fuerte al pasar el mouse */
 }
 
 .fade-out {

@@ -184,16 +184,16 @@ setBackground(url) {
                 <div class="news-header">
                         <img class="server-status-icon" src="assets/images/icon.png">
                         <div class="header-text">
-                            <div class="title">Error.</div>
+                            <div class="title"><u>Bienvenido a Hexa Client</u></div>
                         </div>
                         <div class="date">
-                            <div class="day">25</div>
-                            <div class="month">Abril</div>
+                            <div class="day"></div>
+                            <div class="month"></div>
                         </div>
                     </div>
                     <div class="news-content">
                         <div class="bbWrapper">
-                            <p>No se puede contactar con el servidor de noticias.</br>Por favor verifique su configuración.</p>
+                            <p>Hola Actualmente este launcher esta en un test</br>para procesar launcher hablar a SoyPandax</p>
                         </div>
                     </div>`
             newsElement.appendChild(blockNews);
@@ -326,7 +326,7 @@ setBackground(url) {
             instancesListPopup.innerHTML = '';
 
             if (instancesList.length === 0) {
-                instancesListPopup.innerHTML = `<div class="no-instances">No hay instancias activas disponibles</div>`;
+                instancesListPopup.innerHTML = `<div class="no-instances">There are no active instances available</div>`;
             } else {
                 instancesListPopup.innerHTML = '';
                 

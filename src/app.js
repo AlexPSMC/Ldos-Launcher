@@ -33,10 +33,9 @@ async function setActivity(instanceName = currentInstance, panelName = currentPa
 
     rpc.setActivity({
         startTimestamp: new Date(),
-        largeImageKey: 'launcher_logo',
+        largeImageKey: 'icon',
         largeImageText: 'Hexa Client',
-        smallImageKey: 'icon',
-        smallImageText: 'Preparándome para jugar',
+        smallImageKey: 'setve',
         details: details,
         state: `Jugando: ${instanceName}`,
         instance: true,

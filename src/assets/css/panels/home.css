@@ -56,38 +56,202 @@
 
 /*******************************************************************************
  *                                                                             *
+ * news server                                                                 *
+ *                                                                             *
+ ******************************************************************************/
+
+.new-tab {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 50%;
+    height: 110%;
+
+    margin-left: 0;          /* ❌ quita el empuje */
+    margin-right: 0;
+    margin-top: 3rem;
+    margin-bottom: 0;
+
+    position: relative;
+    left: 35%;
+    transform: translateX(-50%); /* 👈 centra horizontalmente */
+
+    top: -180px; /* 👈 CAMBIA ESTE NÚMERO para subir o bajar */
+}
+
+.news-header-box {
+    position: relative;
+    top: 150px;      /* 🔼🔽 SOLO noticias */
+    left: 0px;     /* ⬅️➡️ SOLO noticias */
+}
+
+.titre-tab-new {
+    margin-top: 5rem;   
+    font-size: 2rem;
+    padding: 0.5rem 13.7rem;
+    border-radius: 1rem;
+    background-color: var(--sidebar);
+    border-right: 1px solid var(--sidebar-border);
+    color: var(--color);
+    
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    backdrop-filter: blur( 15.5px );
+    -webkit-backdrop-filter: blur( 15.5px );
+}
+
+.titre-tab-launcher {
+    margin-top: 0;
+    padding: 1rem 2rem;
+    border-radius: 1.2rem;
+
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(15.5px);
+    -webkit-backdrop-filter: blur(15.5px);
+
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+    line-height: 1.3;
+    font-size: 2rem;
+}
+
+.launcher-box {
+    position: relative;
+    top: 10px;   /* 🔼🔽 SOLO launcher */
+    left: 560px;   /* ⬅️➡️ SOLO launcher */
+}
+
+.titre-tab-launcher span {
+    display: block;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+    opacity: 0.9;
+}
+
+.news-list {
+    width: 90%;
+    height: 90vh;
+    border-radius: 10px;
+    margin: 1rem 0;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255, 255, 255, 0.7) rgba(0, 0, 0, 0.2);
+}
+
+.news-block, .news-blockshop {
+    width: 99%;
+    margin: 0 0 1rem 0;
+    border-radius: 10px;
+    background-color: var(--sidebar);
+    border-right: 1px solid var(--sidebar-border);
+    transition: all 0.2s;
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(15.5px);
+}
+
+.news-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
+    align-items: center;
+}
+
+.header-text .title {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    font-size: 1.2rem;
+    text-align: center;
+    color: #fff;
+}
+
+.news-header .date {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.news-content .bbWrapper {
+    padding: 0 1.5rem;
+    padding-bottom: 1rem;
+    font-size: 1.2rem;
+
+}
+
+.news-content .bbWrapper p {
+    font-weight: 100;
+    margin: 0;
+
+}
+
+.news-content .bbWrapper .news-author {
+    margin-top: 1rem;
+    text-align: end;
+    font-size: 0.8rem;
+}
+
+.news-content .bbWrapper .news-author span {
+    font-weight: 700;
+}
+
+/*******************************************************************************
+ *                                                                             *
  * Status server                                                               *
  *                                                                             *
  ******************************************************************************/
 
 /* Status server */
 .status-server {
-    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: var(--background-transparent);
-    width: 21rem;
+    width: 25rem;
     height: 3rem;
-    color: var(--color);
     border-radius: 10px;
     margin-top: 3rem;
     padding: 1rem;
     text-align: center;
+    background-color: var(--sidebar);
+    border-right: 1px solid var(--sidebar-border);
+    transition: all 0.2s;
+    background: rgba( 0, 0, 0, 0.05 );
+    border-radius: 10px;
+    
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    backdrop-filter: blur( 15.5px );
+    -webkit-backdrop-filter: blur( 15.5px );
+    
+    /* 👇 SOLO ESTO CONTROLA EL MOVIMIENTO */
+    position: relative;
+    top: 0px;    /* ↑↓  negativo sube / positivo baja */
+    left: 370px;   /* ←→  negativo izquierda / positivo derecha */
 }
 
 .server-status-icon {
     height: 3.3rem;
+    width: 3.3rem;
+    opacity: 1;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    transition: all 0.2s;
 }
 
 .server-status-name {
     font-size: 1.5rem;
-    color: var(--color);
+    color:#fff;
 }
 
 .server-status-text {
     font-size: 0.6rem;
     color: #1AC707;
+}
+
+.server-status-infos .red {
+    color: #FF0409;
 }
 
 .status-player-count {
@@ -122,16 +286,6 @@
     display: flex;
 }
 
-/* New tab */
-.new-tab {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 85%;
-    height: 100%;
-    margin-left: 7%;
-}
-
 .background-video-container {
     position: fixed;
     top: 0;
@@ -142,69 +296,6 @@
     z-index: -1;
 }
 
-.titre-tab-new {
-    margin-top: 1rem;   
-    font-size: 2rem;
-    padding: 0.5rem 1rem;
-    border-radius: 2rem;
-    background: var(--background-transparent);
-    color: var(--color);
-}
-
-.news-list {
-    width: 90%;
-    height: 100%;
-    border-radius: 10px;
-    margin: 1rem 0;
-}
-.news-block {
-    width: 100%;
-    margin: 0 0 1rem 0;
-    border-radius: 10px;
-    background: var(--background-transparent);
-}
-
-.news-header {
-    display: flex;
-    justify-content: space-between;
-    padding: 1rem 1.5rem;
-    align-items: center;
-}
-
-.header-text .title {
-    text-decoration: underline;
-    text-underline-offset: 3px;
-    font-size: 1.2rem;
-    text-align: center;
-}
-
-.news-header .date {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.news-content .bbWrapper {
-    padding: 0 1.5rem;
-    padding-bottom: 1rem;
-    font-size: 1.2rem;
-}
-
-.news-content .bbWrapper p {
-    font-weight: 100;
-    margin: 0;
-}
-
-.news-content .bbWrapper .news-author {
-    margin-top: 1rem;
-    text-align: end;
-    font-size: 0.8rem;
-}
-
-.news-content .bbWrapper .news-author span {
-    font-weight: 700;
-}
-
 /* Sidebar */
 .sidebar {
     display: flex;
@@ -213,7 +304,14 @@
     align-items: center;
     width: 90px;
     height: 100vh;
-    background: var(--background-transparent);
+    background-color: var(--sidebar);
+    border-right: 1px solid var(--sidebar-border);
+    transition: all 0.2s;
+    background: rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(5px);
+    gap: 0rem;
     position: fixed;
     top: 0;
     left: 0;
@@ -239,7 +337,7 @@
     width: 3rem;
     border-radius: 50px;
     margin-top: -38px;       /* subirlo más al tope */
-    border: 3px solid rgb(61, 232, 255); /* borde blanco */
+    border: 3px solid rgb(61, 232, 255);
 }
 
 /* Settings button */
@@ -248,12 +346,14 @@
     height: 3rem;
     font-size: 3rem;
     color: var(--element-color);
-    margin: 30px 1.5rem 50px 1.5rem; /* bajar más abajo */
-    transition: transform 0.3s ease-in-out;
+    margin: 30px 1.5rem 50px 1.5rem;
+    transition: var(--transition);
+    cursor: pointer;
 }
 
 .settings-btn:hover {
-    transform: scale(1.2);
+    transform: scale(1.25) rotate(20deg);
+    color: var(--accent);
 }
 
 /* Play elements */
@@ -279,7 +379,7 @@
 
 .play-btn {
     border: none;
-    border-radius: 20px;
+    border-radius: 10px;
     background: none;
     color: var(--color);
     font-size: 2rem;
@@ -421,13 +521,105 @@
     text-align: center;
 }
 
+/* ============================
+   SIDEBAR INSTANCIAS (POPUP)
+============================ */
+
+.instances-sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 90px;
+    height: 100vh;
+    background: #0a0a0a;
+    border-right: 1px solid rgba(255, 255, 255, 0.06);
+    z-index: 10;
+}
+
+/* ============================
+   FONDO PRINCIPAL INSTANCIAS
+============================ */
+
+.instances-background {
+    position: fixed;
+    inset: 0;
+    background:
+        radial-gradient(
+            circle at center,
+            #141414 0%,
+            #0b0b0b 45%,
+            #050505 100%
+        );
+    z-index: -2;
+}
+
+.instances-sidebar-title {
+    font-size: 0.75rem;
+    color: #aaa;
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+}
+
+/* Botones de instancias */
+.instances-sidebar-item {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 12px;
+    border-radius: 10px;
+    background: rgba(255,255,255,0.05);
+    color: #fff;
+    font-size: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.instances-sidebar-item:hover {
+    background: rgba(255,255,255,0.15);
+    transform: scale(1.05);
+}
+
+.instances-sidebar-item.active {
+    border: 2px solid var(--element-color);
+    box-shadow: 0 0 12px var(--element-color);
+}
+
+.instances-sidebar-item.locked {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
 .instances-tab {
     position: relative;
-    background: var(--background);
+    background: transparent;
     border-radius: 10px;
     padding: 1rem 3rem;
     width: min(1000px, 92%);
     max-width: 1100px;
+    margin-left: 90px;
+}
+
+.instances-title {
+    font-size: 42px;
+    font-weight: 700;
+    color: #3CFF7F;
+    letter-spacing: 10px;
+    margin-bottom: 30px;
+}
+
+.instance-player-head {
+    background: url('../../images/default/setve.png') no-repeat;
+    background-size: cover;
+    image-rendering: pixelated;
+    transition: var(--transition);
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50px;
+    margin-top: -38px;       /* subirlo más al tope */
+    border: 3px solid rgba(83, 221, 78, 0.8);
 }
 
 .close-popup {
@@ -485,14 +677,14 @@
     flex-direction: column;
     gap: 12px;
     padding: 8px;
-    border-radius: 10px;
+    border-radius: 1px;
     height: 100%;
 }
 
 .instance-avatar {
     width: 64px;
     height: 64px;
-    border-radius: 50%;
+    border-radius: 1%;
     overflow: hidden;
     background-color: var(--background-element);
     background-position: center;
@@ -535,7 +727,7 @@
 .instance-avatar { position: relative; }
 
 .no-instances {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     color: var(--color);
     padding: 1rem;
     text-align: center;

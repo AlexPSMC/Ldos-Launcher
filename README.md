@@ -5,14 +5,14 @@
 </p>
 
 <p align="center">
-  <strong>Launcher de Minecraft moderno y potente para los servidores de Light Studio</strong>
+  <strong>Launcher de Minecraft moderno y potente para los servidores de Alex Studio</strong>
 </p>
 
 <p align="center">
-  <a href="https://github.com/AlexPSMC/AlexPSMCLauncher/releases/latest">
+  <a href="https://github.com/AlexPSMC/Ldos-Launcher/releases/latest">
     <img src="https://img.shields.io/github/v/release/miguelkix30/MiguelkiNetworkMCLauncher?style=for-the-badge&logo=github&logoColor=white" alt="Latest Release">
   </a>
-  <a href="https://github.com/AlexPSMC/AlexPSMCLauncher/releases">
+  <a href="https://github.com/AlexPSMC/Ldos-Launcher/releases">
     <img src="https://img.shields.io/github/downloads/miguelkix30/MiguelkiNetworkMCLauncher/total?style=for-the-badge&logo=github&logoColor=white" alt="Total Downloads">
   </a>
   <a href="https://discord.gg/Pk3UqJUFEX">
@@ -46,12 +46,12 @@
 
 | Sistema Operativo | Descarga Directa | Requisitos |
 |:----------------:|:----------------:|:----------:|
-| **Windows x64** | [📥 Descargar](https://github.com/AlexPSMC/AlexPSMCLauncher/releases/latest/download/Light-Client-win-x64.exe) | Windows 10+ |
-| **macOS Universal** | [📥 Descargar](https://github.com/AlexPSMC/AlexPSMCLauncher/releases/latest/download/Light-Client-mac-universal.zip) | macOS 10.15+ |
-| **Linux x64** | [📥 Descargar](https://github.com/AlexPSMC/AlexPSMCLauncher/releases/latest/download/Light-Client-linux-x86_64.AppImage) | Ubuntu 18.04+ |
+| **Windows x64** | [📥 Descargar](https://github.com/AlexPSMC/Ldos-Launcher/releases/latest/download/Light-Client-win-x64.exe) | Windows 10+ |
+| **macOS Universal** | [📥 Descargar](https://github.com/AlexPSMC/Ldos-Launcher/releases/latest/download/Light-Client-mac-universal.zip) | macOS 10.15+ |
+| **Linux x64** | [📥 Descargar](https://github.com/AlexPSMC/Ldos-Launcher/releases/latest/download/Light-Client-linux-x86_64.AppImage) | Ubuntu 18.04+ |
 
 ### 🔄 **Otras Opciones**
-- 📋 [**Todas las releases**](https://github.com/AlexPSMC/AlexPSMCLauncher/releases) - Versiones anteriores y beta
+- 📋 [**Todas las releases**](https://github.com/AlexPSMC/Ldos-Launcher/releases) - Versiones anteriores y beta
 
 ---
 
@@ -86,7 +86,7 @@
 ### 🏗️ **Compilación**
 ```bash
 # Clonar el repositorio
-git clone https://github.com/AlexPSMC/AlexPSMCLauncher.git
+git clone https://github.com/AlexPSMC/Ldos-Launcher.git
 cd AlexPSMCLauncher
 
 # Instalar dependencias
