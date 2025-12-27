@@ -193,7 +193,7 @@ setBackground(url) {
                     </div>
                     <div class="news-content">
                         <div class="bbWrapper">
-                            <p>Hola Actualmente este launcher esta en un test</br>para procesar launcher hablar a SoyPandax</p>
+                            <p>Hola Bienvenido A Hexa client este es un launcher para jugar eventos.</p>
                         </div>
                     </div>`
             newsElement.appendChild(blockNews);
