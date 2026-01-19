@@ -118,8 +118,8 @@
 
 .launcher-box {
     position: relative;
-    top: 10px;   /* 🔼🔽 SOLO launcher */
-    left: 560px;   /* ⬅️➡️ SOLO launcher */
+    top: 30px;   /* 🔼🔽 SOLO launcher */
+    left: 805px;   /* ⬅️➡️ SOLO launcher */
 }
 
 .titre-tab-launcher span {
@@ -337,7 +337,7 @@
     width: 3rem;
     border-radius: 50px;
     margin-top: -38px;       /* subirlo más al tope */
-    border: 3px solid rgb(61, 232, 255);
+    border: 4px solid rgb(61, 232, 255);
 }
 
 /* Settings button */
@@ -513,7 +513,8 @@
     display: none;
     width: 100%;
     height: 100%;
-    background: #000000b3;
+    background: rgba(0, 0, 0, 0);
+    backdrop-filter: blur(5px);
     z-index: 10;
     flex-direction: column;
     align-items: center;
@@ -521,105 +522,15 @@
     text-align: center;
 }
 
-/* ============================
-   SIDEBAR INSTANCIAS (POPUP)
-============================ */
-
-.instances-sidebar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 90px;
-    height: 100vh;
-    background: #0a0a0a;
-    border-right: 1px solid rgba(255, 255, 255, 0.06);
-    z-index: 10;
-}
-
-/* ============================
-   FONDO PRINCIPAL INSTANCIAS
-============================ */
-
-.instances-background {
-    position: fixed;
-    inset: 0;
-    background:
-        radial-gradient(
-            circle at center,
-            #141414 0%,
-            #0b0b0b 45%,
-            #050505 100%
-        );
-    z-index: -2;
-}
-
-.instances-sidebar-title {
-    font-size: 0.75rem;
-    color: #aaa;
-    margin-bottom: 1rem;
-    letter-spacing: 1px;
-}
-
-/* Botones de instancias */
-.instances-sidebar-item {
-    width: 64px;
-    height: 64px;
-    margin-bottom: 12px;
-    border-radius: 10px;
-    background: rgba(255,255,255,0.05);
-    color: #fff;
-    font-size: 0.75rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    cursor: pointer;
-    transition: all 0.2s ease;
-}
-
-.instances-sidebar-item:hover {
-    background: rgba(255,255,255,0.15);
-    transform: scale(1.05);
-}
-
-.instances-sidebar-item.active {
-    border: 2px solid var(--element-color);
-    box-shadow: 0 0 12px var(--element-color);
-}
-
-.instances-sidebar-item.locked {
-    opacity: 0.4;
-    cursor: not-allowed;
-}
-
 .instances-tab {
     position: relative;
-    background: transparent;
-    border-radius: 10px;
+    background: linear-gradient(135deg, rgba(17, 26, 28, 0.98) 0%, rgba(8, 55, 69, 0.95) 100%);
+    border-radius: 15px;
+    border: 2px solid var(--purple);
     padding: 1rem 3rem;
     width: min(1000px, 92%);
     max-width: 1100px;
-    margin-left: 90px;
-}
-
-.instances-title {
-    font-size: 42px;
-    font-weight: 700;
-    color: #3CFF7F;
-    letter-spacing: 10px;
-    margin-bottom: 30px;
-}
-
-.instance-player-head {
-    background: url('../../images/default/setve.png') no-repeat;
-    background-size: cover;
-    image-rendering: pixelated;
-    transition: var(--transition);
-    height: 3rem;
-    width: 3rem;
-    border-radius: 50px;
-    margin-top: -38px;       /* subirlo más al tope */
-    border: 3px solid rgba(83, 221, 78, 0.8);
+    box-shadow: 0 0 30px rgba(78, 181, 221, 0.4), inset 0 0 15px rgba(255, 255, 255, 0.05);
 }
 
 .close-popup {

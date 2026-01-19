@@ -184,7 +184,7 @@ setBackground(url) {
                 <div class="news-header">
                         <img class="server-status-icon" src="assets/images/icon.png">
                         <div class="header-text">
-                            <div class="title"><u>Bienvenido a Hexa Client</u></div>
+                            <div class="title"><u></u></div>
                         </div>
                         <div class="date">
                             <div class="day"></div>
@@ -193,7 +193,7 @@ setBackground(url) {
                     </div>
                     <div class="news-content">
                         <div class="bbWrapper">
-                            <p>Hola Bienvenido A Hexa client este es un launcher para jugar eventos.</p>
+                            <p></p>
                         </div>
                     </div>`
             newsElement.appendChild(blockNews);
@@ -326,7 +326,7 @@ setBackground(url) {
             instancesListPopup.innerHTML = '';
 
             if (instancesList.length === 0) {
-                instancesListPopup.innerHTML = `<div class="no-instances">There are no active instances available</div>`;
+                instancesListPopup.innerHTML = `<div class="no-instances">No hay instancias disponibles</div>`;
             } else {
                 instancesListPopup.innerHTML = '';
                 

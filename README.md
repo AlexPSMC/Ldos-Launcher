@@ -1,7 +1,7 @@
 # 🚀 AlexPSMC Launcher
 
 <p align="center">
-  <img src="src/assets/images/icon.png" alt="Light Launcher" width="400" height="400">
+  <img src="src/assets/images/icon.png" alt="Hexa Launcher" width="400" height="400">
 </p>
 
 <p align="center">
@@ -15,7 +15,7 @@
   <a href="https://github.com/AlexPSMC/Ldos-Launcher/releases">
     <img src="https://img.shields.io/github/downloads/miguelkix30/MiguelkiNetworkMCLauncher/total?style=for-the-badge&logo=github&logoColor=white" alt="Total Downloads">
   </a>
-  <a href="https://discord.gg/Pk3UqJUFEX">
+  <a href="https://discord.gg/eUMB3UGFeK">
     <img src="https://img.shields.io/discord/1300477405957329018?style=for-the-badge&logo=discord&logoColor=white&label=Discord" alt="Discord">
   </a>
 </p>
@@ -46,9 +46,9 @@
 
 | Sistema Operativo | Descarga Directa | Requisitos |
 |:----------------:|:----------------:|:----------:|
-| **Windows x64** | [📥 Descargar](https://github.com/AlexPSMC/Ldos-Launcher/releases/latest/download/Light-Client-win-x64.exe) | Windows 10+ |
-| **macOS Universal** | [📥 Descargar](https://github.com/AlexPSMC/Ldos-Launcher/releases/latest/download/Light-Client-mac-universal.zip) | macOS 10.15+ |
-| **Linux x64** | [📥 Descargar](https://github.com/AlexPSMC/Ldos-Launcher/releases/latest/download/Light-Client-linux-x86_64.AppImage) | Ubuntu 18.04+ |
+| **Windows x64** | [📥 Descargar](https://github.com/AlexPSMC/Ldos-Launcher/releases/latest/download/Hexa-Client-win-x64.exe) | Windows 10+ |
+| **macOS Universal** | [📥 Descargar](https://github.com/AlexPSMC/Ldos-Launcher/releases/latest/download/Hexa-Client-mac-universal.zip) | macOS 10.15+ |
+| **Linux x64** | [📥 Descargar](https://github.com/AlexPSMC/Ldos-Launcher/releases/latest/download/Hexa-Client-linux-x86_64.AppImage) | Ubuntu 18.04+ |
 
 ### 🔄 **Otras Opciones**
 - 📋 [**Todas las releases**](https://github.com/AlexPSMC/Ldos-Launcher/releases) - Versiones anteriores y beta
