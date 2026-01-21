@@ -269,7 +269,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 1.5rem;
-    padding: 0.5rem;
+    padding: 0.3rem 5rem;
 }
 
 .account {
@@ -331,13 +331,16 @@
 
 /* Profile elements */
 .profile-image {
-    width: 80px;
-    height: 80px;
+    width: 210px;
+    height: 210px;
     background: url(../../images/default/setve.png);
     background-size: cover;
     border-radius: 10px;
     image-rendering: pixelated;
     box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+
+    position: relative;
+    margin-left: 2.2rem; /* ⬅️➡️ */
 }
 
 .profile-infos {
@@ -377,6 +380,10 @@
     color: #ff9999;
     transition: all 0.3s ease;
     line-height: 1;
+
+    position: relative;
+    margin-left: 7rem; /* ⬅️➡️ */
+    top: 15px; /* 🔼🔽 */
 }
 
 .delete-profile:hover {

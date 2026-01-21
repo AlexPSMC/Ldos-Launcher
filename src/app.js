@@ -33,7 +33,7 @@ async function setActivity(instanceName = currentInstance, panelName = currentPa
 
     rpc.setActivity({
         startTimestamp: new Date(),
-        largeImageKey: 'icon',
+        largeImageKey: 'hexa',
         largeImageText: 'Hexa Client',
         smallImageKey: 'setve',
         details: details,

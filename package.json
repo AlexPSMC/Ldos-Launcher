@@ -1,8 +1,8 @@
 {
     "name": "Hexa-Client",
     "preductname": "Hexa Client",
-    "version": "3.0.21",
-    "description": "Launcher oficial de Light Studio",
+    "version": "3.0.30",
+    "description": "Launcher oficial de Hexa Studio",
     "main": "src/app.js",
     "author": {
         "name": "AlexPSMC",
@@ -22,11 +22,13 @@
         "ignore": "**/test"
     },
     "dependencies": {
+        "discord": "^0.8.2",
         "discord-rpc": "^4.0.1",
         "electron-updater": "^6.1.8",
         "minecraft-java-core": "^3.10.4",
         "node-bdd": "^2.0.4",
         "node-fetch": "^2.7.0",
+        "rpc": "^3.3.3",
         "xml-js": "^1.6.11"
     },
     "devDependencies": {
