@@ -1,129 +1,113 @@
 @import "font.css";
 @import 'theme.css';
 
+/* contenedor general */
 body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: #ffffff00;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     background-color: #d8092100;
-    font-family: "Poppins";
-    letter-spacing: 0px;
+    font-family: "Poppins", sans-serif;
+    color: var(--color);
+    overflow: hidden;
 }
 
-img {
-    -webkit-user-drag: none;
-    user-select: none;
+#splash {
+    width: 500px;
+    max-width: 90%;
+    text-align: center;
+    pointer-events: none;
 }
 
 .splash {
-    position: absolute;
-    top: 180px;
-    left: 50%;
+    position: relative;
+    top: 1px;
     transform: translate(-50%);
-    width: 240px;
-    height: 240px;
+    width: 258px;
+    height: 248px;
     transition: opacity .3s, top 1.5s;
     opacity: 0;
 }
 
-.splash.opacity {
+#splash.visible .splash {
     opacity: 1;
-}
-
-.splash.translate {
-    top: 129px;
+    transform: translateY(0);
 }
 
 .splash-message {
-    position: absolute;
-    top: 289px;
-    left: 0px;
-    width: 400px;
-    font: normal normal bold 19px/29px Poppins;
-    text-align: center;
-    letter-spacing: 0px;
-    transition: opacity 1.5s;
-    color: var(--color);
+    font: bold 22px/28px Poppins;
+    margin: 0 0 8px;
     opacity: 0;
-}
-
-.splash-message.opacity {
-    opacity: 1;
+    transition: opacity .4s ease;
 }
 
 .splash-author {
-    position: absolute;
-    top: 326px;
-    left: 0px;
-    width: 400px;
-    text-align: center;
-    transition: opacity 1.5s;
-    font: normal normal normal 9px/13px Poppins;
-    color: var(--color);
+    font: normal 11px/14px Poppins;
+    margin: 2px 0 8px;
     opacity: 0;
+    transition: opacity .4s ease;
 }
 
 .splash-author .author {
-    font: normal normal bold 9px/13px Poppins;
-}
-
-.splash-author.opacity {
-    opacity: 1;
+    font-weight: 700;
 }
 
 .message {
-    position: absolute;
-    top: 347px;
-    left: 0px;
-    width: 400px;
-    text-align: center;
-    transition: opacity 1.5s;
-    font: normal normal bold 18px/27px Poppins;
-    color: var(--color);
+    font: bold 24px/35px Poppins;
+    margin: 0 0 14px;
     opacity: 0;
+    transition: opacity .4s ease;
 }
 
-.download-update {
-    position: absolute;
-    left: 25%;
-    margin-top: 20px;
-    width: 200px;
-    font: normal normal bold 22px / 45px Poppins;
-    color: var(--color);
-    border: 2px solid var(--color);
-    border-radius: 15px;
-    transition: background-color .2s, color .2s;
-}
-
-.download-update:hover {
-    background-color: var(--color);
-    color: var(--background);
-    cursor: pointer;
-}
-
-.message.opacity {
+#splash.visible .splash-message,
+#splash.visible .splash-author,
+#splash.visible .message {
     opacity: 1;
 }
 
 .progress {
-    position: absolute;
-    top: 410px;
-    left: 106px;
-    width: 189px;
+    position: relative;
+    width: 100%;
     height: 10px;
     appearance: none;
-    transition: opacity .2s;
+    -webkit-appearance: none;
+    border-radius: 8px;
+    border: 2px solid rgba(102, 102, 102, 0.3);
+    background-color: rgba(102, 102, 102, 0.3);
     opacity: 0;
+    transition: opacity .3s ease;
+    margin-top: 16px;
+    box-shadow: inset 0 0 8px rgba(102, 102, 102, 0.2);
 }
 
-.show {
+.progress.show {
     opacity: 1;
 }
 
 .progress::-webkit-progress-bar {
-    background-color: var(--background);
-    border: solid 1px var(--element-color);
-    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 6px;
+    box-shadow: inset 0 0 8px rgba(102, 102, 102, 0.2);
 }
 
 .progress::-webkit-progress-value {
-    background-color: var(--element-color);
-    border-radius: 10px;
+    background: linear-gradient(90deg, var(--purple-dark) 0%, var(--purple) 50%, var(--purple-light) 100%);
+    border-radius: 6px;
+    transition: width 0.2s ease;
+    box-shadow: 0 0 12px rgba(102, 102, 102, 0.8);
+}
+
+.progress::-moz-progress-bar {
+    background: linear-gradient(90deg, var(--purple-dark) 0%, var(--purple) 50%, var(--purple-light) 100%);
+    border-radius: 6px;
+    transition: width 0.2s ease;
+    box-shadow: 0 0 12px rgba(102, 102, 102, 0.8);
 }
