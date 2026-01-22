@@ -340,7 +340,7 @@
     box-shadow: 0 4px 12px rgba(0,0,0,0.3);
 
     position: relative;
-    margin-left: 2.2rem; /* ⬅️➡️ */
+    margin-left: 2.2rem;
 }
 
 .profile-infos {
@@ -382,8 +382,8 @@
     line-height: 1;
 
     position: relative;
-    margin-left: 7rem; /* ⬅️➡️ */
-    top: 15px; /* 🔼🔽 */
+    margin-left: 7rem;
+    top: 15px;
 }
 
 .delete-profile:hover {

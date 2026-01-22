@@ -25,7 +25,7 @@
     position: relative;
     top: -6px;
 
-    /* 👇 letra normal */
+    /* xd */
     font-family: Arial, sans-serif;
     font-weight: normal;
 }
@@ -33,13 +33,13 @@
 .login-text {
     font-size: 3rem;
     position: relative;
-    top: -2px; /* mueve 20px hacia arriba */
+    top: -2px;
 }
 
 .login-text3 {
     font-size: 3rem;
     position: relative;
-    top: -2px; /* mueve 20px hacia arriba */
+    top: -2px;
     background: linear-gradient(90deg, #ff0000, #c70000);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -49,21 +49,21 @@
 
 .login-text, .login-text3 {
     display: inline-block;
-    margin-right: 10px; /* separarlos un poco */
+    margin-right: 10px;
 }
 
 .login-text-identificate {
     font-size: 2.0rem;
     position: relative;
-    top: -10px; /* mueve 20px hacia arriba */
+    top: -10px;
 }
 
-/* Todos los botones (Conectar, Cancelar, Microsoft, Offline...) */
+/* conect cancel */
 .connect,
 .cancel {
-    background: #ff0000;        /* Rosa */
-    color: rgb(0, 0, 0);               /* Texto blanco */
-    border: solid 4px #ff0000;  /* Borde rosa */
+    background: #ff0000;
+    color: rgb(0, 0, 0);
+    border: solid 4px #ff0000;
     border-radius: 1px;
     padding: 0.3rem 4rem;
     font-size: inherit;
@@ -75,7 +75,7 @@
 .connect:hover,
 .cancel:hover {
     transform: scale(1.1);
-    background: #d10000;        /* Rosa fuerte */
+    background: #d10000;
     border-color: #d10000;
 }
 
@@ -96,18 +96,18 @@
     display: none;
 }
 
-/* SOLO los botones de Microsoft y Offline (pantalla principal) */
+/* select microft offline */
 .select-microsoft,
 .select-offline {
-    background: #ff0000;             /* Rosa */
-    color: rgb(0, 0, 0);                    /* Texto blanco */
-    border-color: #ff0000;           /* Borde rosa fuerte */
+    background: #ff0000;
+    color: rgb(0, 0, 0);
+    border-color: #ff0000;
 }
 
 .select-microsoft:hover,
 .select-offline:hover {
     transform: scale(1.1);
-    background: #d10000;             /* Rosa más fuerte al pasar el mouse */
+    background: #d10000;
 }
 
 .fade-out {
@@ -116,12 +116,12 @@
   }
 
   html {
-    scrollbar-width: none; /* For Firefox */
-    -ms-overflow-style: hidden; /* For Internet Explorer and Edge */
+    scrollbar-width: none;
+    -ms-overflow-style: hidden;
 }
 
 html::-webkit-scrollbar {
-    display: none; /* For Chrome, Safari, and Opera */
+    display: none;
 }
 
 @keyframes fall{

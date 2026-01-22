@@ -1,7 +1,7 @@
 {
     "name": "Hexa-Client",
     "preductname": "Hexa Client",
-    "version": "3.0.36",
+    "version": "3.0.40",
     "description": "Launcher oficial de Hexa Studio",
     "main": "src/app.js",
     "author": {

@@ -628,32 +628,49 @@ setBackground(url) {
         };
 
         const launch = new Launch();
+        const instanceName = options.name || options.title || (opt.version && opt.version.name) || 'Minecraft';
 
-        launch.on('extract', () => ipcRenderer.send('main-window-progress-load'));
+        const bar1 = document.getElementById('p-bar-1');
+        const bar2 = document.getElementById('p-bar-2');
+        const infoText = document.getElementById('info-text');
+        const title = document.getElementById('display-title');
+
+        if (title) title.innerHTML = instanceName;
+
         launch.on('progress', (progress, size) => {
-            infoStarting.innerHTML = `Descargando... ${((progress / size) * 100).toFixed(0)}%`;
-            ipcRenderer.send('main-window-progress', { progress, size });
-            if (progressBar) {
-                progressBar.value = progress;
-                progressBar.max = size;
-            }
+            const percentage = ((progress / size) * 100).toFixed(0);
+            if (infoText) infoText.innerHTML = `Descargando... ${percentage}%`;
+            if (bar1) { bar1.value = progress; bar1.max = size; }
+            if (bar2) { bar2.value = progress; bar2.max = size; }
         });
+        
         launch.on('check', (progress, size) => {
-            infoStarting.innerHTML = `Verificando... ${((progress / size) * 100).toFixed(0)}%`;
-            ipcRenderer.send('main-window-progress', { progress, size });
-            if (progressBar) {
-                progressBar.value = progress;
-                progressBar.max = size;
-            }
+            const percentage = ((progress / size) * 100).toFixed(0);
+            if (infoText) infoText.innerHTML = `Verificando... ${percentage}%`;
+            if (bar1) { bar1.value = progress; bar1.max = size; }
+            if (bar2) { bar2.value = progress; bar2.max = size; }
         });
+
         launch.on('estimated', time => console.log(`Tiempo estimado: ${time}s`));
         launch.on('speed', speed => console.log(`${(speed / 1067008).toFixed(2)} Mb/s`));
-        launch.on('patch', () => { if (infoStarting) infoStarting.innerHTML = `Abriendo Minecraft...`; });
-        launch.on('data', () => {
-            if (progressBar) progressBar.style.display = "none";
-            if (infoStarting) infoStarting.innerHTML = `Jugando...`;
-            new logger('Minecraft', '#36b030');
+        launch.on('patch', () => { 
+            if (infoText) infoText.innerHTML = `Abriendo ${instanceName}...`; 
         });
+        launch.on('data', () => {
+            const mainBox = document.getElementById('main-box');
+            const loadingContainer = document.getElementById('loading-bars-container');
+            const playingStatus = document.getElementById('playing-status');
+
+        if (loadingContainer) {
+            loadingContainer.style.opacity = "0";
+            setTimeout(() => {
+                loadingContainer.style.display = "none";
+                if (playingStatus) playingStatus.style.display = "block";
+                if (mainBox) mainBox.classList.add('is-playing'); // Aquí se activa el fondo blanco
+            }, 400);
+        }
+        new logger('Minecraft', '#36b030');
+    });
         launch.on('close', code => {
             ipcRenderer.send('main-window-progress-reset');
             if (infoStartingBOX) infoStartingBOX.style.display = "none";

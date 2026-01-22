@@ -68,22 +68,24 @@
             </div>
 
             <div class="info-starting-game">
-                <div class="starting-box">
-
+                <div class="starting-box" id="main-box">
                     <div class="starting-left">
-                        <div class="starting-title">INICIANDO MINECRAFT...</div>
-                        <div class="info-starting-game-text">Conectando...</div>
-                        <progress value="0" max="0" class="progress-bar"></progress>
+                        <div class="starting-title" id="display-title">INICIANDO MINECRAFT...</div>
+
+                        <div id="loading-bars-container">
+                            <progress value="0" max="100" class="progress-bar" id="p-bar-1"></progress>
+                            <div class="info-starting-game-text" id="info-text">Conectando...</div>
+                            <progress value="0" max="100" class="progress-bar inverse" id="p-bar-2"></progress>
+                        </div>
+
+                        <div id="playing-status" style="display: none;">
+                            <span style="color: #888; font-size: 14px;">Playing</span>
+                        </div>
                     </div>
 
-                    <div class="starting-right">
-                        <img class="starting-icon-big" src="assets/images/icon.png" alt="Loading Icon">
+                    <div class="starting-right" id="image-container">
+                        <img class="starting-icon-big" id="start-img" src="assets/images/icon.png" alt="Loading Icon">
                     </div>
-
                 </div>
             </div>
         </div>
-
-    </div>
-
-</div>
