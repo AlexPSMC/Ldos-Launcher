@@ -18,7 +18,7 @@ RPC.register(CLIENT_ID);
 
 const rpc = new RPC.Client({ transport: 'ipc' });
 
-let currentInstance = 'Sin seleccionar';
+let currentInstance = 'Sin Instancia';
 let currentPanel = 'home';
 
 async function setActivity(instanceName = currentInstance, panelName = currentPanel) {
